@@ -10,17 +10,18 @@ header {
   background: #DA1111;
   padding: 30px;
 }
-/*sets the 'main' container's margins to a percentage of screen real estate available, to make it look neat*/
+/*sets the 'main' container's margins to a percentage of 
+screen real estate available, to make it look neat*/
 main {
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 /*adds a background to the footer, & provides space for the elements within*/
 footer {
   background : #1818E4;
-  padding : 4px;
+  padding-top : 0.5%;
 }
 /*aligns the text to the center of the container, colors it, bolds it, sizes it, & removes space underneath*/
 h1 {
@@ -38,66 +39,106 @@ h2 {
 /*colors & adds space to the left of this heading*/
 h3 {
   color : #E7E7E7;
-  padding-left : 4%;
+  text-align: left;
+  width: 140px;
+  padding: 0px;
+  margin: 0px;
 }
 /*aligns, colors, & sizes the heading element, while adding a light bolding effect*/
-h4 {
+.subhead {
   text-align : center;
-  color : black;
+  color : #E7E7E7;
   font-weight: 700;
   font-size : 16px;
 }
 /*sets the default text size for text in paragraphs, & aligns the lext to the left of the page*/
 p {
   font-size: 18px;
-  text-align: left;
-  
+  text-align: left;  
 }
 /*adds a background to an unordered-list, & sets the items & their markers to inside that background*/
 ul {
-  background: #A4A4A4;
+  background: #cccccc;
   list-style-position: inside;
+  list-style-type: "\2717";
+  padding: 4px;
+  margin: 4px;
 }
-/*styles an ordered-list; adds color to the text, & space to it's left side*/
+/*styles an ordered-list; adds color to the text,
+& space to it's sides; yes I'm aware that 'list-style-type' 
+is what differentiates an ordered-list from an unordered-list. 
+don't care. ratio. stay mad*/
 ol {
   color : #E7E7E7;
-  padding-left: 8%;
+  list-style-type: "\1F585";
+  list-style-position: inside;
+  margin: 4px;
+  padding: 2px;
 }
-/*sets a width of the asigned container*/
+/*changes the font size of the list-items*/ 
+.vwidth li {
+  font-size: 16px;
+}
+
+/*sets a width of the asigned container, in this case, the unordered-list*/
 .box {
-  width: 180px;
+  width: 140px;
+  padding: 0px;
+}
+  
+/*sets the width of the div container around the list, & removes padding*/
+.box2 {
+  width: 148px;
+  padding: 0px;
 }
 /*class; sets a max width of the asigned containter, relative to the screen size*/
 .foot {
-  max-width: 85%;
+  margin-left: 2.5%;
+  margin-right: 5%;
+  padding: 5px;
 }
-/*sets the font size of the text inside the 'aside'*/
-p.aside {
-  font-size: 14px;
+/*sets the font size of the text inside the 'aside'; and formats it*/
+.aside {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom : 4px;
+  margin: 0px;
 }
 /*adds a color to the link & removes the underline*/
 a:link { 
   color: #E7E7E7;  
-  text-decoration: none
+  text-decoration: none;
 }
 /*adds a new color when the link has been visited & removes the underline*/
 a:visited { 
-  color: red;   
-  text-decoration: none
+  color: #ffb8b8;   
+  text-decoration: none;
 }
 /*adds a new color when the link is hovered over & removes the underline*/
 a:hover { 
-  color: #C800FF; 
+  color: #fff899; 
   text-decoration: none; 
   font-size: 115%;
 }
 /*adds a new color when the link is being clicked & removes the underline*/
 a:active { 
-  color: #02ADFC;  
+  color: #8adaff;  
   text-decoration: none
 }
-/*adds a side bos, & pushes it to the right side of the screen, while italicising the text*/
+/*adds an aside container, & floats it to the right side of the screen, while italicising the text*/
 aside {
+  color : #E7E7E7;
   float: right;
-  font-style: italic; 
+  font-style: italic;
+  height: auto;
+  max-width: 40%;
+}
+/*formats the image so it sits centered in whichever container it's in. Also, it's reactive. 
+changes size along with the width of the viewport/screen, so long as the height isn't exceeded*/
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: auto;
+  height: 50px;  
 }
