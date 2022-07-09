@@ -3,38 +3,53 @@
   <head>
     <meta charset="utf-8">
   	<meta name="viewport" content="width=device-width">
-  	<title> Jean-Louis Portfolio</title>
+  	<title> Robenson Portfolio</title>
   	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel='stylesheet' type='text/css'/>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-<!--header section, most of the formatting is in the style.css file-->
+<!--header section, most of the formatting is in the style.css file.-->
     <header>
+      <!--created a 'div' container to hold the page 
+      heading & the subheading.-->
       <div>
         <h1>Robenson Jean-Louis</h1>
-        <h4>Software Developer, RPA Engineer</h4>
+      <!--formating issues required I create a "subhead" class, 
+      & asign it a new color, among other things.-->
+        <p class="subhead">Software Developer, RPA Engineer</p>
       </div>
     </header>
-<!--main section of the webpage. all the juice is below-->
+<!--main section of the webpage.-->
     <main>
-  <!--designated an 'article' portion, to hold the bulk of the webpage, within the 'main'-->
+      <!--designated an 'article' portion, to hold the bulk of the webpage, within the 'main'.-->
       <article>
-        <!--Developer/About-Me section. Includes an unordered-list, formatted to have it's own background, classed as 'box'. Added a 'horizontal rule' element, & formatted it to look a certain way throughout.-->
+        <!--article's cut into two parts, 
+        'Developer' & 'About-Me'.-->
         <h2>Hi, I'm Robenson</h2>
-        <div id="Developer">        
-        <hr style="border: double black">
-          <p>Throughout my exposure to the industry & in practicing the skill, software development has evolved to take on many forms & meanings, depending on the context. Primarily, as an art form, software development has shown me how people from <i>any</i> background can come together to create; simply from the desire to express a common vision.</p>
-          <div class="box">
-            <ul>
-              <li>Websites</li>
-              <li>Applications</li>
-              <li>Games</li>
-              <li>Services</li>
-            </ul>
+        <p>26 year-old developer; based in Dallas, Texas</p>
+        <!--'Developer' section of the article. gave it an 'id' incase I want
+        to link to it later on.-->
+        <div id="Developer">
+          <!--first of two horizontal rules. made these to break up the page
+            & declutter the site, visually-->
+          <hr style="border: double black">
+            <p>Throughout my exposure to the industry & in practicing the skill, software development has evolved to take on many forms & meanings, depending on the context. Primarily, as an art form, software development has shown me how people from <i>any</i> background can come together to create; simply from the desire to express a common vision.</p>
+            <!--'div' container, classed as "box". made to hold the unordered-list
+            seen on the page.-->
+            <div class="box">
+              <!--unordered-list... really only here for the sake of it, i mean really.-->
+              <ul>
+                <li>Websites</li>
+                <li>Applications</li>
+                <li>Games</li>
+                <li>Services</li>
+              </ul>
           </div>
-          <p>All of these things, & beyond, are made possible because of the skillsets & opportunities of people like you & I. & while the same could be said of industries outside of technology, no other group has reached a scope of influence nearly as vast as ours.</p>
+            <p>All of these things, & beyond, are made possible because of the skillsets & opportunities of people like you & I. & while the same could be said of industries outside of technology, no other group has reached a scope of influence nearly as vast as ours.</p>
         </div>
+        <!--second horizontal rule, mentioned above-->
         <hr style="border: double black">
+        <!--'About Me' section; also has an 'id' for linking later-->
         <div id="About-Me">
           <h2>About Me</h2>
           <p>Outside of software development, my focus expands to psychology, fps games, social philosophy, & film study.</p>
@@ -43,20 +58,31 @@
         </div>
       </article>      
     </main>
-<!--footer section; includes contact info inside of an ordered-list, as well as an aside, for the copyright thing, even though there is no copyright, & I'm still not too sure how asides are supposed to work. Used 'classes' to format the whole thing, in the style.css doc though.-->
+<!--footer section; includes contact info inside of an ordered-list.-->
     <footer>
+      <!--container inside the footer to hold all the stuff-->
       <div class="foot">
           <h3>Contact Me</h3>
+          <!--side container to hold an image & some text. link attached to the image-->
           <aside>
+            <!--added a .jpg picture to the site & linked in a fun little easter egg-->
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+              <img src="images/transparent.png" alt="Titan's Advantage">
+            </a>
+            <!--lil copyright thing underneath the logo, 
+            because cosplaying as a legitimate copywrite holder is fun-->
             <p class="aside">© Robenson Jean-Louis</p>
           </aside>
-          <ol>
-            <li> <a href="https://www.linkedin.com/">LinkedIn</a> </li>
-            <li> <a href="https://github.com/Robensonjl">GitHub</a> </li>
-            <li> <a href="mailto:robenson76@gmail.com">Email Me</a> </li>
-          </ol>
+          <!--ordered-list that isn't exactly ordered by anything. Links redirect to a new tab-->
+          <div class="box2">
+            <!--.vwidth changes the font size of the list items -->
+            <ol class="vwidth">
+              <li> <a href="https://www.youtube.com/watch?v=yKQ_sQKBASM" target="_blank">LinkedIn</a> </li>
+              <li> <a href="https://github.com/Robensonjl" target="_blank">GitHub</a> </li>
+              <li> <a href="mailto:robenson76@gmail.com" target="_blank">Email Me</a> </li>
+            </ol>
+          </div>
       </div>
     </footer>    
-  </body>
-  
+  </body>  
 </html>
