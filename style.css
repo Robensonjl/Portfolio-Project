@@ -7,7 +7,7 @@ html, body {
 }
 /*adds a background to the header, as well as padding to the elements within*/
 header {
-  background: #DA1111;
+  background: #990B0B;
   padding: 30px;
 }
 /*sets the 'main' container's margins to a percentage of 
